@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Rows</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="header-container row-container">
+        <div class="header-dash"></div>
+        <div class="header-title">YAY! It’s BOGO</div>
+        <div class="header-dash"></div>
+    </div>
+
+    <div class="row-container">
+        <div class="row-inner-container">
+        <div class="row-header row-header1" onclick="toggleRow(0)">
+            <input type="radio" name="row-radio" class="custom-radio" checked> 
+            <div class="row-header-wrapper">
+                <div class="firstunitwrapper">1 Unit <div class="discount-tag">10% Off</div></div>
+                <div class="standardprice">Standard Price</div>
+
+            </div>
+            <div class="spacer"></div> 
+            <div class="price-container">
+                <span class="current-price">$10.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </div>
+        </div>
+        <div class="row-content active">
+            <input type="radio" name="row-radio" class="custom-radio radiobtnforpositioning" checked>
+
+            <div class="product-details">
+                <div class="dropdown-row">
+                    <div class="indexclass indextextforpositioning">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <label class="sizelabel">Size</label>
+                        
+                    </div>
+                    <div class="dropdown-container">
+                        <label class="colourlabel">Colour</label>
+                        
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#2</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row-container container2">
+        <div class="row-inner-container">
+        <div class="popular-icon">
+
+            <svg width="341" height="182" viewBox="0 0 341 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M217 0H336L341 7H212L217 0Z" fill="#D7445B"/>
+                <path d="M217 0H336V22C336 24.2091 334.209 26 332 26H221C218.791 26 217 24.2091 217 22V0Z" fill="#FF6B82"/>
+                <path d="M228.966 9.27273H231.241L233.645 15.1364H233.747L236.15 9.27273H238.426V18H236.636V12.3196H236.564L234.305 17.9574H233.086L230.828 12.2983H230.755V18H228.966V9.27273ZM247.966 13.6364C247.966 14.5881 247.786 15.3977 247.425 16.0653C247.067 16.733 246.578 17.2429 245.959 17.5952C245.342 17.9446 244.649 18.1193 243.879 18.1193C243.104 18.1193 242.408 17.9432 241.791 17.5909C241.175 17.2386 240.688 16.7287 240.33 16.0611C239.972 15.3935 239.793 14.5852 239.793 13.6364C239.793 12.6847 239.972 11.875 240.33 11.2074C240.688 10.5398 241.175 10.0312 241.791 9.68182C242.408 9.32955 243.104 9.15341 243.879 9.15341C244.649 9.15341 245.342 9.32955 245.959 9.68182C246.578 10.0312 247.067 10.5398 247.425 11.2074C247.786 11.875 247.966 12.6847 247.966 13.6364ZM246.095 13.6364C246.095 13.0199 246.003 12.5 245.818 12.0767C245.636 11.6534 245.379 11.3324 245.047 11.1136C244.714 10.8949 244.325 10.7855 243.879 10.7855C243.433 10.7855 243.044 10.8949 242.712 11.1136C242.379 11.3324 242.121 11.6534 241.936 12.0767C241.754 12.5 241.663 13.0199 241.663 13.6364C241.663 14.2528 241.754 14.7727 241.936 15.196C242.121 15.6193 242.379 15.9403 242.712 16.1591C243.044 16.3778 243.433 16.4872 243.879 16.4872C244.325 16.4872 244.714 16.3778 245.047 16.1591C245.379 15.9403 245.636 15.6193 245.818 15.196C246.003 14.7727 246.095 14.2528 246.095 13.6364ZM254.067 11.7827C254.033 11.4389 253.887 11.1719 253.628 10.9815C253.37 10.7912 253.019 10.696 252.576 10.696C252.275 10.696 252.02 10.7386 251.813 10.8239C251.605 10.9062 251.446 11.0213 251.336 11.169C251.228 11.3168 251.174 11.4844 251.174 11.6719C251.168 11.8281 251.201 11.9645 251.272 12.081C251.346 12.1974 251.446 12.2983 251.574 12.3835C251.702 12.4659 251.85 12.5384 252.017 12.6009C252.185 12.6605 252.364 12.7116 252.554 12.7543L253.338 12.9418C253.719 13.027 254.069 13.1406 254.387 13.2827C254.705 13.4247 254.98 13.5994 255.213 13.8068C255.446 14.0142 255.627 14.2585 255.755 14.5398C255.885 14.821 255.952 15.1435 255.955 15.5071C255.952 16.0412 255.816 16.5043 255.546 16.8963C255.279 17.2855 254.892 17.5881 254.387 17.804C253.884 18.017 253.277 18.1236 252.567 18.1236C251.863 18.1236 251.249 18.0156 250.726 17.7997C250.206 17.5838 249.8 17.2642 249.507 16.8409C249.218 16.4148 249.066 15.8878 249.051 15.2599H250.837C250.857 15.5526 250.941 15.7969 251.088 15.9929C251.239 16.1861 251.439 16.3324 251.689 16.4318C251.942 16.5284 252.228 16.5767 252.546 16.5767C252.858 16.5767 253.13 16.5312 253.36 16.4403C253.593 16.3494 253.773 16.223 253.901 16.0611C254.029 15.8991 254.093 15.7131 254.093 15.5028C254.093 15.3068 254.034 15.142 253.918 15.0085C253.804 14.875 253.637 14.7614 253.415 14.6676C253.196 14.5739 252.928 14.4886 252.61 14.4119L251.659 14.1733C250.924 13.9943 250.343 13.7145 249.917 13.3338C249.49 12.9531 249.279 12.4403 249.282 11.7955C249.279 11.267 249.419 10.8054 249.703 10.4105C249.99 10.0156 250.384 9.70739 250.884 9.4858C251.384 9.2642 251.952 9.15341 252.588 9.15341C253.236 9.15341 253.801 9.2642 254.284 9.4858C254.77 9.70739 255.148 10.0156 255.418 10.4105C255.688 10.8054 255.827 11.2628 255.836 11.7827H254.067ZM256.864 10.794V9.27273H264.031V10.794H261.359V18H259.536V10.794H256.864ZM267.989 18V9.27273H271.432C272.094 9.27273 272.658 9.39915 273.124 9.65199C273.59 9.90199 273.945 10.25 274.189 10.696C274.436 11.1392 274.56 11.6506 274.56 12.2301C274.56 12.8097 274.435 13.321 274.185 13.7642C273.935 14.2074 273.573 14.5526 273.098 14.7997C272.627 15.0469 272.056 15.1705 271.385 15.1705H269.191V13.6918H271.087C271.442 13.6918 271.735 13.6307 271.965 13.5085C272.198 13.3835 272.371 13.2116 272.485 12.9929C272.601 12.7713 272.659 12.517 272.659 12.2301C272.659 11.9403 272.601 11.6875 272.485 11.4716C272.371 11.2528 272.198 11.0838 271.965 10.9645C271.732 10.8423 271.436 10.7812 271.078 10.7812H269.834V18H267.989ZM283.778 13.6364C283.778 14.5881 283.598 15.3977 283.237 16.0653C282.879 16.733 282.391 17.2429 281.771 17.5952C281.155 17.9446 280.462 18.1193 279.692 18.1193C278.916 18.1193 278.22 17.9432 277.604 17.5909C276.987 17.2386 276.5 16.7287 276.142 16.0611C275.784 15.3935 275.605 14.5852 275.605 13.6364C275.605 12.6847 275.784 11.875 276.142 11.2074C276.5 10.5398 276.987 10.0312 277.604 9.68182C278.22 9.32955 278.916 9.15341 279.692 9.15341C280.462 9.15341 281.155 9.32955 281.771 9.68182C282.391 10.0312 282.879 10.5398 283.237 11.2074C283.598 11.875 283.778 12.6847 283.778 13.6364ZM281.908 13.6364C281.908 13.0199 281.815 12.5 281.631 12.0767C281.449 11.6534 281.192 11.3324 280.859 11.1136C280.527 10.8949 280.138 10.7855 279.692 10.7855C279.246 10.7855 278.857 10.8949 278.524 11.1136C278.192 11.3324 277.933 11.6534 277.749 12.0767C277.567 12.5 277.476 13.0199 277.476 13.6364C277.476 14.2528 277.567 14.7727 277.749 15.196C277.933 15.6193 278.192 15.9403 278.524 16.1591C278.857 16.3778 279.246 16.4872 279.692 16.4872C280.138 16.4872 280.527 16.3778 280.859 16.1591C281.192 15.9403 281.449 15.6193 281.631 15.196C281.815 14.7727 281.908 14.2528 281.908 13.6364ZM285.145 18V9.27273H288.588C289.25 9.27273 289.814 9.39915 290.28 9.65199C290.746 9.90199 291.101 10.25 291.346 10.696C291.593 11.1392 291.716 11.6506 291.716 12.2301C291.716 12.8097 291.591 13.321 291.341 13.7642C291.091 14.2074 290.729 14.5526 290.255 14.7997C289.783 15.0469 289.212 15.1705 288.542 15.1705H286.347V13.6918H288.243C288.598 13.6918 288.891 13.6307 289.121 13.5085C289.354 13.3835 289.527 13.2116 289.641 12.9929C289.757 12.7713 289.816 12.517 289.816 12.2301C289.816 11.9403 289.757 11.6875 289.641 11.4716C289.527 11.2528 289.354 11.0838 289.121 10.9645C288.888 10.8423 288.593 10.7812 288.235 10.7812H286.99V18H285.145ZM298.305 9.27273H300.151V14.9403C300.151 15.5767 299.999 16.1335 299.695 16.6108C299.393 17.0881 298.972 17.4602 298.429 17.7273C297.886 17.9915 297.254 18.1236 296.533 18.1236C295.808 18.1236 295.175 17.9915 294.632 17.7273C294.089 17.4602 293.668 17.0881 293.366 16.6108C293.065 16.1335 292.915 15.5767 292.915 14.9403V9.27273H294.76V14.7827C294.76 15.1151 294.832 15.4105 294.977 15.669C295.125 15.9276 295.332 16.1307 295.599 16.2784C295.866 16.4261 296.178 16.5 296.533 16.5C296.891 16.5 297.202 16.4261 297.466 16.2784C297.733 16.1307 297.939 15.9276 298.084 15.669C298.232 15.4105 298.305 15.1151 298.305 14.7827V9.27273ZM301.669 18V9.27273H303.514V16.4787H307.255V18H301.669ZM310.204 18H308.227L311.24 9.27273H313.618L316.626 18H314.649L312.463 11.267H312.395L310.204 18ZM310.081 14.5696H314.751V16.0099H310.081V14.5696ZM317.676 18V9.27273H321.12C321.779 9.27273 322.341 9.39062 322.807 9.62642C323.276 9.85937 323.632 10.1903 323.877 10.6193C324.124 11.0455 324.248 11.5469 324.248 12.1236C324.248 12.7031 324.123 13.2017 323.873 13.6193C323.623 14.0341 323.26 14.3523 322.786 14.5739C322.314 14.7955 321.743 14.9062 321.073 14.9062H318.767V13.4233H320.775C321.127 13.4233 321.419 13.375 321.652 13.2784C321.885 13.1818 322.059 13.0369 322.172 12.8438C322.289 12.6506 322.347 12.4105 322.347 12.1236C322.347 11.8338 322.289 11.5895 322.172 11.3906C322.059 11.1918 321.884 11.0412 321.648 10.9389C321.415 10.8338 321.121 10.7812 320.766 10.7812H319.522V18H317.676ZM322.39 14.0284L324.559 18H322.522L320.4 14.0284H322.39Z" fill="white"/>
+
+            </svg>
+        </div>
+        <div class="row-header" onclick="toggleRow(1)">
+            <input type="radio" name="row-radio" class="custom-radio ">
+            2 Unit
+            <div class="discount-tag">20% Off</div>
+            <div class="spacer"></div> 
+
+            <div class="price-container">
+                <span class="current-price">$18.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </div>
+        </div>
+        <div class="row-content">
+            <input type="radio" name="row-radio" class="custom-radio radiobtnforpositioning" checked>
+
+            <div class="product-details">
+                <div class="dropdown-row">
+                    <div class="indexclass indextextforpositioning">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <label class="sizelabel">Size</label>
+                        
+                    </div>
+                    <div class="dropdown-container">
+                        <label class="colourlabel">Colour</label>
+                        
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#2</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row-container">
+        <div class="row-inner-container">
+        <div class="row-header" onclick="toggleRow(2)">
+            <input type="radio" name="row-radio" class="custom-radio ">
+            3 Unit
+            <div class="discount-tag">30% Off</div>
+            <div class="spacer"></div> 
+
+            <div class="price-container">
+                <span class="current-price">$24.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </div>
+        </div>
+        <div class="row-content active">
+            <input type="radio" name="row-radio" class="custom-radio radiobtnforpositioning" checked>
+
+            <div class="product-details">
+                <div class="dropdown-row">
+                    <div class="indexclass indextextforpositioning">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <label class="sizelabel">Size</label>
+                        
+                    </div>
+                    <div class="dropdown-container">
+                        <label class="colourlabel">Colour</label>
+                        
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#1</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dropdown-row">
+                    <div class="indexclass">#2</div>
+                    
+                    <div class="dropdown-container">
+                        <select>
+                            <option>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <select>
+                            <option>Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   <div class = "row-container delivery-row-container">
+    <div class="delivery-total-container">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="total-amount">Total: $18.00 USD</div>
+    </div>
+</div>
+<div class = "row-container delivery-row-container">
+    <button class="add-to-cart-btn">+ Add to Cart</button>
+</div>
+   
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
