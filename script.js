@@ -1,7 +1,7 @@
 const rows = document.querySelectorAll('.row-container:not(.header-container)');
 const contents = document.querySelectorAll('.row-content');
 const radios = document.querySelectorAll('input[type="radio"]:not(.radiobtnforpositioning)');
-
+radios[0].checked = true;
 function toggleRow(index) {
     // Remove active state from all rows
     rows.forEach(row => {
